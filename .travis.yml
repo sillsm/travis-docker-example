@@ -7,4 +7,4 @@ install:
   - sudo apt-get install -qy slirp lxc lxc-docker
   - git clone git://github.com/jpetazzo/sekexe
 script:
-  - sudo sekexe/run "`pwd`/uml.sh"
+  - sekexe/run "`pwd`/uml.sh"
