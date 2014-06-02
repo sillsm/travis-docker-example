@@ -8,9 +8,8 @@ trap 'kill $(jobs -p)' SIGINT SIGTERM EXIT
 
 # Start docker daemon
 docker -d &
-sleep 1
+sleep 10
 
 # Use docker
-docker search ubuntu
-docker pull debian
+docker search debian
 docker run debian /bin/echo hello world
