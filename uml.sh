@@ -12,4 +12,4 @@ sleep 10
 
 # Use docker
 docker search debian
-docker run debian /bin/echo hello world
+sudo docker run debian /bin/echo hello world
