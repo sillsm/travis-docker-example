@@ -11,5 +11,5 @@ docker -d &
 sleep 1
 
 # Use docker
-sudo docker search ubuntu
+docker search ubuntu
 docker run ubuntu /bin/echo hello world
