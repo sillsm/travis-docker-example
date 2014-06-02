@@ -11,4 +11,5 @@ docker -d &
 sleep 1
 
 # Use docker
+docker pull ubuntu
 docker run ubuntu /bin/echo hello world
