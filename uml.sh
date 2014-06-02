@@ -12,4 +12,4 @@ sleep 10
 
 # Use docker
 docker search debian
-pkexec docker run debian /bin/echo hello world
+docker run stackbrew/debian /bin/echo hello world
