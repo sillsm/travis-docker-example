@@ -12,4 +12,5 @@ sleep 1
 
 # Use docker
 docker search ubuntu
-docker run ubuntu /bin/echo hello world
+docker pull debian
+docker run debian /bin/echo hello world
