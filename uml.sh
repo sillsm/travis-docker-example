@@ -11,5 +11,4 @@ docker -d &
 sleep 10
 
 # Use docker
-docker search debian
-docker run stackbrew/debian /bin/echo hello world
+docker run ubuntu /bin/echo hello world
