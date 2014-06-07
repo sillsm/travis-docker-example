@@ -1,6 +1,8 @@
 install:
   - sudo apt-get update
   - sudo apt-get install virtualbox
+  - sudo apt-get install dkms
+  - sudo apt-get install virtualbox-ose-dkms
   - virtualbox -version
   #other stuff
   - go get github.com/boot2docker/boot2docker-cli
