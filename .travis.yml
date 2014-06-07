@@ -1,5 +1,6 @@
 install:
   - sudo apt-get update
+  - sudo apt-get install linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') virtualbox
   - sudo apt-get install virtualbox
   #other stuff
   - sudo modprobe vboxdrv
