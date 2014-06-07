@@ -1,9 +1,9 @@
 install:
   - sudo apt-get update
-  - sudo apt-get install virtualbox
-  - sudo apt-get install dkms
-  - sudo apt-get install virtualbox-ose-dkms
-  - virtualbox -version
+  - sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian oneiric contrib"
+  - wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+  - sudo apt-get update
+  - sudo apt-get install virtualbox-4.1
   #other stuff
   - go get github.com/boot2docker/boot2docker-cli
   - cd $GOPATH/src/github.com/boot2docker/boot2docker-cli
