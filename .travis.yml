@@ -4,7 +4,7 @@ install:
   - sudo apt-get install schroot
   - sudo mkdir -p /newmount
   - sudo debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
-  - chroot /newmount /bin/bash
+  - sudo chroot /newmount /bin/bash
   - ls 
 script:
   - echo hello world
