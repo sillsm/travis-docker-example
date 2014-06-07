@@ -3,7 +3,7 @@ install:
   - sudo apt-get install debootstrap
   - cd /
   - mkdir /wheezy-chroot
-main # debootstrap wheezy ./wheezy-chroot http://http.debian.net/debian/
+  - debootstrap wheezy ./wheezy-chroot http://http.debian.net/debian/
   - ls 
 script:
   - echo hello world
