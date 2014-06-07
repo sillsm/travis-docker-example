@@ -1,6 +1,6 @@
 install:
   - sudo apt-get update
-  - sudo apt-get install virtualbox
+  - sudo apt-get install virtualbox-4.3
   - go get github.com/boot2docker/boot2docker-cli
   - cd $GOPATH/src/github.com/boot2docker/boot2docker-cli
   - make goinstall
