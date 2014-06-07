@@ -1,9 +1,10 @@
 install:
   - sudo apt-get update
-  - sudo apt-get install debootstrap
-  - cd /
-  - sudo mkdir /wheezy-chroot
-  - sudo debootstrap wheezy ./wheezy-chroot http://http.debian.net/debian/
+  - sudo apt-get install debootstrap 
+  - sudo apt-get install schroot
+  - sudo mkdir -p /newmount
+  - sudo debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
+  - chroot /newmount /bin/bash
   - ls 
 script:
   - echo hello world
