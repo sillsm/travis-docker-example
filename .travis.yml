@@ -1,5 +1,5 @@
 install:
   - sudo apt-get upgrade
-  - sudo apt-get install lxc
+  - sudo apt-get install boot2docker
 script:
   - echo hello world
