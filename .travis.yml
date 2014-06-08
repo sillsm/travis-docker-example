@@ -4,7 +4,7 @@ install:
   - sudo apt-get install schroot
   - sudo mkdir -p /newmount
   - sudo debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
-  - sudo chroot /newmount /bin/bash "sudo apt-get install virtualbox && echo hi"
+  - sudo chroot /newmount apt-get install virtualbox&&echo hi
   - ls 
 script:
   - echo hello world
