@@ -10,6 +10,7 @@ uname -a
 echo that was the current kernel
 ls 
 pwd
+chroot
 dpkg
 apt-get install
 #sudo apt-get install debootstrap 
