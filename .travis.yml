@@ -7,7 +7,7 @@ install:
   - sudo chmod +x /usr/sbin/policy-rc.d
   - sudo apt-get install -qy slirp 
   - git clone https://github.com/sillsm/sekexe
-  #
+  ##
   #- sudo apt-get update
   #- sudo apt-get install debootstrap 
   #- sudo apt-get install schroot
