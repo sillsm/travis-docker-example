@@ -16,4 +16,4 @@ install:
   - sudo mount -o bind /proc /newmount/proc
   - sudo cp /etc/resolv.conf /newmount/etc/resolv.conf
 script:
-  - sekexe/run "sudo chroot /newmount uname -a"
+  - sudo sekexe/run "sudo chroot /newmount uname -a"
