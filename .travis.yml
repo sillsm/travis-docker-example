@@ -7,6 +7,7 @@ install:
   - sudo chmod +x /usr/sbin/policy-rc.d
   - sudo apt-get install -qy slirp 
   - git clone https://github.com/sillsm/sekexe
+  - pwd
   - wget http://fs.devloop.org.uk/filesystems/Debian-Wheezy/Debian-Wheezy-AMD64-root_fs.bz2
   - bunzip2 Debian-Wheezy-AMD64-root_fs.bz2
   - mv Debian-Wheezy-AMD64-root_fs /
