@@ -6,8 +6,10 @@ set -e
 # Kill background processes on exit
 trap 'kill $(jobs -p)' SIGINT SIGTERM EXIT
 
-uname -a 
+uname -a
 echo that was the current kernel
+ls 
+pwd
 apt-get install sudo
 sudo apt-get install debootstrap 
 sudo apt-get install schroot
