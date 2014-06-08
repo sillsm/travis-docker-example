@@ -14,11 +14,12 @@ apt-get
 echo apt get worked
 chroot
 dpkg
-apt-get install
+apt-get update
+apt-get install debootstrap
 #sudo apt-get install debootstrap 
 #sudo apt-get install schroot
 #sudo mkdir -p /newmount
-#sudo debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
+debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
 #sudo mount -o bind /proc /newmount/proc
 #sudo cp /etc/resolv.conf /newmount/etc/resolv.conf
 #sudo chroot /newmount uname -a
