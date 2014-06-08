@@ -10,6 +10,8 @@ uname -a
 echo that was the current kernel
 ls 
 pwd
+apt-get
+echo apt get worked
 chroot
 dpkg
 apt-get install
