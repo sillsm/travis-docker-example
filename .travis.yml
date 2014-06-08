@@ -10,6 +10,8 @@ install:
   - pwd
   - wget http://fs.devloop.org.uk/filesystems/Debian-Wheezy/Debian-Wheezy-AMD64-root_fs.bz2
   - bunzip2 Debian-Wheezy-AMD64-root_fs.bz2
+  - pwd
+  - ls
   #
   #
   #- sudo apt-get update
