@@ -9,7 +9,6 @@ install:
   - git clone https://github.com/sillsm/sekexe
   #
   #
-  #
   #- sudo apt-get update
   #- sudo apt-get install debootstrap 
   #- sudo apt-get install schroot
