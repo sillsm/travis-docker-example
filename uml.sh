@@ -8,6 +8,7 @@ trap 'kill $(jobs -p)' SIGINT SIGTERM EXIT
 
 uname -a 
 echo that was the current kernel
+apt-get install sudo
 sudo apt-get install debootstrap 
 sudo apt-get install schroot
 sudo mkdir -p /newmount
