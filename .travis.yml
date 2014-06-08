@@ -1,5 +1,5 @@
 install:
-  - sudo uname - a
+  - sudo uname -a
   - sudo apt-get update
   - sudo apt-get install debootstrap 
   - sudo apt-get install schroot
