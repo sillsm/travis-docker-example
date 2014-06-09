@@ -12,7 +12,11 @@ install:
   - bunzip2 Debian-Wheezy-AMD64-root_fs.bz2
   - mv Debian-Wheezy-AMD64-root_fs sekexe
   - cd sekexe
-  - ./uml ubda=Debian-Wheezy-AMD64-root_fs mem=128M
+  - wget http://uml.devloop.org.uk/kernels/kernel64-3.14.5.xz
+  - sudo apt-get install xz-utils
+  - unxz kernel64-3.14.5.xz
+  - chmod 755 kernel64-3.14.5
+  - ./kernel64-3.14.5 ubda=Debian-Wheezy-AMD64-root_fs mem=256M
   
   ##
   #- sudo apt-get update
