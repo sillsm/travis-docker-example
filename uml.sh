@@ -26,6 +26,7 @@ ls
 # Start docker daemon
 #docker -d &
 #sleep 10
+##
 
 # Use docker
 #docker run ubuntu /bin/echo hello world
