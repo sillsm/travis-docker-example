@@ -10,7 +10,8 @@ uname -a
 echo that was the current kernel
 ls 
 pwd
-cd var/log
+sudo chroot /var/log/newmount
+uname -a
 echo "hi" > sample.txt
 ls
 #apt-get update
