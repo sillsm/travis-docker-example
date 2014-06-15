@@ -10,7 +10,7 @@ uname -a
 echo that was the current kernel
 ls 
 pwd
-sudo chroot /var/log/newmount
+chroot /var/log/newmount
 uname -a
 echo "hi" > sample.txt
 ls
