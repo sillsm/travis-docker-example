@@ -8,15 +8,15 @@ install:
   - sudo apt-get install -qy slirp 
   - git clone https://github.com/sillsm/sekexe
   
-  - wget http://fs.devloop.org.uk/filesystems/Debian-Wheezy/Debian-Wheezy-AMD64-root_fs.bz2
-  - bunzip2 Debian-Wheezy-AMD64-root_fs.bz2
-  - mv Debian-Wheezy-AMD64-root_fs sekexe
-  - cd sekexe
-  - wget http://uml.devloop.org.uk/kernels/kernel64-3.14.5.xz
-  - sudo apt-get install xz-utils
-  - unxz kernel64-3.14.5.xz
-  - chmod 755 kernel64-3.14.5
-  - ./kernel64-3.14.5 ubda=Debian-Wheezy-AMD64-root_fs mem=256M
+#  - wget http://fs.devloop.org.uk/filesystems/Debian-Wheezy/Debian-Wheezy-AMD64-root_fs.bz2
+#  - bunzip2 Debian-Wheezy-AMD64-root_fs.bz2
+#  - mv Debian-Wheezy-AMD64-root_fs sekexe
+#  - cd sekexe
+#  - wget http://uml.devloop.org.uk/kernels/kernel64-3.14.5.xz
+#  - sudo apt-get install xz-utils
+#  - unxz kernel64-3.14.5.xz
+#  - chmod 755 kernel64-3.14.5
+#  - ./kernel64-3.14.5 ubda=Debian-Wheezy-AMD64-root_fs mem=256M
   
   ##
   #- sudo apt-get update
