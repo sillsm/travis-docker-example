@@ -10,12 +10,15 @@ uname -a
 echo that was the current kernel
 ls 
 pwd
-apt-get update
-apt-get install debootstrap
+cd var/log
+echo "hi" > sample.txt
+ls
+#apt-get update
+#apt-get install debootstrap
 #sudo apt-get install debootstrap 
 #sudo apt-get install schroot
 #sudo mkdir -p /newmount
-debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
+#debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
 #sudo mount -o bind /proc /newmount/proc
 #sudo cp /etc/resolv.conf /newmount/etc/resolv.conf
 #sudo chroot /newmount uname -a
