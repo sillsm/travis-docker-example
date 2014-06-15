@@ -20,11 +20,11 @@ install:
   
   ##
   #- sudo apt-get update
-  #- sudo apt-get install debootstrap 
-  #- sudo apt-get install schroot
-  #- sudo mkdir -p /newmount
-  #- sudo debootstrap --variant=buildd trusty /newmount http://archive.ubuntu.com/ubuntu/
-  #- sudo mount -o bind /proc /newmount/proc
-  #- sudo cp /etc/resolv.conf /newmount/etc/resolv.conf
+  - sudo apt-get install debootstrap 
+  - sudo apt-get install schroot
+  - sudo mkdir -p /var/log/newmount
+  - sudo debootstrap --variant=buildd trusty /var/log/newmount http://archive.ubuntu.com/ubuntu/
+  - sudo mount -o bind /proc /var/log/newmount/proc
+  - sudo cp /etc/resolv.conf /var/log/newmount/etc/resolv.conf
 script:
   - sekexe/run "`pwd`/uml.sh"
